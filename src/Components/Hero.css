@@ -1,0 +1,22 @@
+.anim{
+        opacity: 0;
+        transform: translateY(70px);
+        animation: moveup .5s linear forwards;
+}
+.heading{
+        animation-delay: .3s;
+}
+.content-text{
+        animation-delay: 1s;
+}
+.btn{
+        animation-delay: 1.5s;
+}
+
+@keyframes moveup{
+        100%{
+                opacity: 1;
+                transform: translateY(0px);
+
+        }
+}
