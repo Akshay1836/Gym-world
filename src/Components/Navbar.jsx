@@ -2,19 +2,21 @@
 
 import React from 'react'
 import { Menu, X } from 'lucide-react'
+import { Link, Outlet } from 'react-router-dom'
+import Login from './Login'
 
 const menuItems = [
   {
     name: 'Home',
-    href: '#',
+    href: '/',
   },
   {
     name: 'About Us',
-    href: '#',
+    href: '/about',
   },
   {
-    name: 'Contact',
-    href: '#',
+    name: 'Workout Plan',
+    href: '/workout',
   },
 ]
 
@@ -26,8 +28,8 @@ export function Navbar() {
   }
 
   return (
-    <div className="relative w-full bg-cyan-950">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
+    <div className=" relative w-full">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 sm:px-6 lg:px-8 bg-cyan-950">
         <div className="space-x-6">
           <span className="text-white font-extrabold text-lg font-para1">Gym World</span>
         </div>
@@ -35,12 +37,12 @@ export function Navbar() {
           <ul className="inline-flex space-x-24">
             {menuItems.map((item) => (
               <li key={item.name}>
-                <a
-                  href={item.href}
+                <Link
+                  to={item.href}
                   className="text-sm font-semibold text-white hover:text-teal-500"
                 >
                   {item.name}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
@@ -50,7 +52,7 @@ export function Navbar() {
             type="button"
             className="rounded-md bg-gray-200 px-3 py-1 text-sm font-bold text-cyan-800  shadow-sm hover:bg-white hover:text-cyan-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
           >
-            Sign Up
+            <a href='#signup'>Sign Up</a>
           </button>
         </div>
         <div className="lg:hidden">
@@ -78,15 +80,15 @@ export function Navbar() {
                 <div className="mt-6">
                   <nav className="grid gap-y-4">
                     {menuItems.map((item) => (
-                      <a
+                      <Link
                         key={item.name}
-                        href={item.href}
+                        to={item.href}
                         className="-m-3 flex items-center rounded-md p-3 text-sm font-semibold hover:bg-white"
                       >
                         <span className="ml-3 text-base font-medium text-black">
                           {item.name}
                         </span>
-                      </a>
+                      </Link>
                     ))}
                   </nav>
                 </div>
@@ -94,13 +96,15 @@ export function Navbar() {
                   type="button"
                   className="mt-4 w-full rounded-md px-3 py-1 text-sm font-bold text-white bg-cyan-800  shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
                 >
-                  Sign Up
+                  <a href='#signup'>Sign Up</a>
+                  
                 </button>
               </div>
             </div>
           </div>
         )}
       </div>
+      <Outlet/>
     </div>
   )
 }

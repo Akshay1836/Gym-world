@@ -6,10 +6,10 @@
 .heading{
         animation-delay: .3s;
 }
-.content-text{
+.content-text,.para{
         animation-delay: 1s;
 }
-.btn{
+.btn,.last{
         animation-delay: 1.5s;
 }
 

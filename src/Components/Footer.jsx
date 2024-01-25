@@ -4,7 +4,7 @@ function Footer() {
   return (
     <div>
       <section className="relative overflow-hidden py-10 bg-cyan-950 text-white">
-        <div className="text-lg font-para1 font-bold mb-4 text-center text-white">
+        {/* <div className="text-lg font-para1 font-bold mb-4 text-center text-white">
           <p><q> &nbsp; When you feel like quitting think about why you started.  &nbsp;</q></p>
           <p className="pb-4">Get Up</p>
           <hr/>
@@ -18,7 +18,7 @@ function Footer() {
           <img src="" alt="" />
         </div>
         <hr/>
-        </div>
+        </div> */}
         
         <div className="relative z-10 mx-auto max-w-7xl px-4 py-4">
           <div className="-m-6 flex flex-wrap">

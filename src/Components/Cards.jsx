@@ -1,8 +1,17 @@
 import React from "react";
+import {motion} from 'framer-motion'
 
 function Cards(props) {
   return (
-    <div className="w-full mr-8 mb-8 hover:bg-sky-900 rounded-xl">
+    <motion.div 
+    initial={{x:100,opacity:0}}
+    whileInView={{x:0,opacity:1}}
+    transition={{
+      delay:1,
+      duration:.5,
+      type:'spring',
+      stiffness:200
+    }} className="w-full mr-8 mb-8 hover:bg-sky-900 rounded-xl">
       <div className="card bg-base-100 shadow-md rounded-xl">
         <figure>
           <img
@@ -19,7 +28,7 @@ function Cards(props) {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

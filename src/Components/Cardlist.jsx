@@ -1,5 +1,6 @@
 import React from "react";
 import Cards from "./Cards";
+import {easeIn, motion} from 'framer-motion';
 
 function Cardlist() {
   const cards = [
@@ -23,7 +24,9 @@ function Cardlist() {
     <div className="bg-sky-950 text-gray-200 pb-10">
       <h1 className="text-center font-bold font-para1 text-2xl py-4">WHY CHOOSE US</h1>
       <div className="flex justify-center items-center">
-      <div className="flex flex-col sm:flex-row justify-center items-center w-2/3 md:h-1/2">
+      <div 
+      
+      className="flex flex-col sm:flex-row justify-center items-center w-2/3 md:h-1/2">
       {cards.map((card) => 
         <Cards head={card.head} desc={card.desc} imgsrc={card.imgsrc}/>
       )}
