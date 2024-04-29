@@ -149,7 +149,7 @@ function Footer() {
         </div>
       </section>
       <p className="text-sm text-gray-600 text-center">
-        &copy; Copyright 2022. All Rights Reserved by Gym world.
+        &copy; Copyright 2024. All Rights Reserved by Gym world.
       </p>
     </div>
   );

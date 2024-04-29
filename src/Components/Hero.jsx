@@ -1,11 +1,11 @@
 import React from "react";
 import "./Hero.css";
-
+import gym2 from '../Images/gym2.jpg'
 function Hero() {
   return (
     <div className="hero min-h-screen">
       <div className="hero-overlay"></div>
-      <div className="hero-content text-center flex items-center justify-center h-screen bg-[url('./src/images/gym2.jpg')] bg-cover bg-center">
+      <div className="hero-content text-center flex items-center justify-center h-screen  bg-cover bg-center " style={{ backgroundImage: `url(${gym2})` }}>
         <div className="max-w-md">
           <h1 className="anim heading mb-5 text-5xl font-bold text-white">
             WORK WITH PROFESSIONALS

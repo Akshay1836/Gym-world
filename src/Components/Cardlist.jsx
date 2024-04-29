@@ -1,23 +1,26 @@
 import React from "react";
 import Cards from "./Cards";
 import {easeIn, motion} from 'framer-motion';
+import image1 from '../Images/6D.jpg'
+import image2 from '../Images/core.jpg'
+import image3 from '../Images/cross.jpg'
 
 function Cardlist() {
   const cards = [
     {
       head: 'WORKOUT 6D',
       desc: "6D is a fun,super resultive functional 30minute Class on our freestyle area. It challenges you through different 6 Dimensions of Fitness including Lift, Move, Function, Core, Burn fat Recover to achieve amazing results in your body!",
-      imgsrc: "./src/images/6D.jpg",
+      imgsrc: image1,
     },
     {
       head: 'CORE 30',
       desc: "A 30-minute athletic and functional core strength workout. ( Strength and conditioning class 30 minutes, equipment based ). Core30 trains you like an athlete in 30 action-packed minutes. A strong core, from your shoulders to your hips",
-      imgsrc: "./src/images/core.jpg",
+      imgsrc: image2,
     },
     {
       head: 'CROSSFIT',
       desc: "Experience the exhilarating world of CrossFit Group Classes, where strength, stamina, and community converge to create a fitness journey like no other! Our CrossFit classes are designed to unleash your potential and elevate your fitness to new heights.",
-      imgsrc: "./src/images/cross.jpg",
+      imgsrc: image3,
     },
   ];
   return (
