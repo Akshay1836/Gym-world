@@ -4,7 +4,7 @@ import circle1 from '../Images/circle1.jpg'
 import circle2 from '../Images/circle2.jpg'
 import circle4 from '../Images/circle4.jpg'
 import core from '../Images/core.jpg'
-import strong from '../Images/strong.jpg'
+import Strong from '../Images/Strong.jpg'
 import cross from '../Images/cross.jpg'
 import gym2 from '../Images/gym2.jpg'
 import zumba from '../Images/zumba.jpg'
@@ -37,7 +37,7 @@ function Content() {
                 </div>
             </div>
             <div class="ml-6 mt-32 p-2">
-                <img tabindex="0" src={strong} class="w-40 h-40 rounded-lg ml-6 flex-shrink-0 object-cover object-fit" />
+                <img tabindex="0" src={Strong} class="w-40 h-40 rounded-lg ml-6 flex-shrink-0 object-cover object-fit" />
                 <div class="flex gap-1 items-center mt-8">
                     <img tabindex="0" src={cross} class="w-48 h-48 rounded-lg" />
                     <img tabindex="0" src={gym2} class="w-20 h-20 rounded-lg ml-6 object-cover object-fit" />
