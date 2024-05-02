@@ -1,13 +1,13 @@
 import React from 'react'
 import { ArrowRight } from 'lucide-react'
 import './Hero.css'
-
+import log6 from '../Images/log6.jpg'
 function Login() {
   return (
     <section id='signup'>
         {/* <div className='h-full w-full relative'>
         <img src="./src/images/bg1.jpg" className='bg-cover bg-center h-screen w-full' alt=""/> */}
-      <div className="flex items-center justify-center px-4 py-8 sm:px-6 sm:py-16 lg:px-8 lg:py-24 bg-[url('./src/images/log6.jpg')] bg-cover bg-center">
+      <div className="flex items-center justify-center px-4 py-8 sm:px-6 sm:py-16 lg:px-8 lg:py-24  bg-cover bg-center" style={{ backgroundImage: `url(${log6})` }}>
         <div className="anim xl:mx-auto xl:w-full xl:max-w-sm 2xl:max-w-md bg-sky-700/70 p-4 rounded-lg shadow-xl shadow-sky-700">
           <div className="mb-2 flex justify-center">
             <p className="font-para1 text-3xl text-white font-extrabold">Gym World</p>

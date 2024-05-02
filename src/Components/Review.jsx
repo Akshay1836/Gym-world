@@ -3,6 +3,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Reviewcard from './Reviewcard';
+import kohli from '../Images/kohli.jpg'
+import cr7 from '../Images/cr7.jpg'
+import djokovic from '../Images/djokovic.png'
 
 function Review() {
         const settings = {
@@ -16,17 +19,17 @@ function Review() {
                 {
                         name:"Virat Kohli ",
                         description:"XYZ has been awesome to me. Their trainers are exceptional, the overall vibe is great and I have had nothing but good experiences. I definitely recommend them to my friends and family.",
-                        imgsrc:'./src/images/kohli.jpg'
+                        imgsrc:kohli
                 },
                 {
                         name:"Cristiano Ronaldo",
                         description:"I am extremely happy & satisfied with my decision to undergo treatment at Fit & Fine.I was skeptical and had all the doubts like anybody would have regarding weight lossusing non surgical treatment.",
-                        imgsrc:'./src/images/cr7.jpg'
+                        imgsrc:cr7
                 },
                 {
                         name:"Novak Djokovic",
                         description:"I am very happy and satisfied with fit and fine clinic at andheri east branch.I have got good inch loss and weight loss,I had joined consulting Dr Fenny who made me explain the procedure perfectly",
-                        imgsrc:'./src/images/djokovic.png'
+                        imgsrc:djokovic
                 }
         ]
   return (

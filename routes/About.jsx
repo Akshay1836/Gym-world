@@ -6,12 +6,13 @@ import Content from '../src/Components/Content'
 import Imageblock from '../src/Components/Imageblock'
 import {motion} from 'framer-motion';
 import {fadeIn} from '../src/variants'
+import bg1 from '../src/Images/bg1.jpg'
 
 function About() {
   const images={
-    image1:"./src/images/bg1.jpg",
-    image2:'./src/images/bg1.jpg',
-    image3:'./src/images/bg1.jpg',
+    image1:bg1,
+    image2:bg1,
+    image3:bg1,
   }
   return (
     
