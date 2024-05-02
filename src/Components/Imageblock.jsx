@@ -2,7 +2,7 @@ import React from 'react';
 import "./Hero.css";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
-
+import bg3 from '../Images/bg3.webp'
 function Imageblock() {
   return (
 
@@ -16,7 +16,7 @@ function Imageblock() {
     <div class="flex flex-wrap items-center mt-10">
     <div class="w-2/3 md:w-4/12 px-4 mr-auto ml-auto">
         <div class="relative flex flex-col min-w-0 break-words  w-full mb-2 shadow-lg rounded-lg bg-cyan-800">
-          <img alt="..." src="./src/images/bg3.webp" class="object-fit w-full align-middle rounded-t-lg"/>
+          <img alt="..." src={bg3} class="object-fit w-full align-middle rounded-t-lg"/>
           <blockquote class=" relative p-8 mb-4">
             <h4 class="text-xl font-bold text-white">
               Top Notch Services
